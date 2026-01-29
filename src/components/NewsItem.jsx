@@ -1,3 +1,4 @@
+import Image from "../assets/News.webp";
 const NewsItem = ({ title, description, src, url }) => {
   return (
     <div
@@ -5,7 +6,7 @@ const NewsItem = ({ title, description, src, url }) => {
       style={{ maxWidth: "345px" }}
     >
       <img
-        src={src}
+        src={src? src:Image}
         style={{ height: "200px", width: "325px" }}
         className="card-img-top"
         alt="..."
