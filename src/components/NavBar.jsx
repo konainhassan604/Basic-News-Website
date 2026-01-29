@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar = ({setCategory}) => {
+const NavBar = ({ setCategory }) => {
   return (
     <nav
       className="navbar navbar-expand-lg bg-body-tertiary"
@@ -8,7 +8,7 @@ const NavBar = ({setCategory}) => {
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-        <span className="badge bg-light text-dark fs-4">NewMag</span>
+          <span className="badge bg-light text-dark fs-4">NewsWave</span>
         </a>
         <button
           className="navbar-toggler"

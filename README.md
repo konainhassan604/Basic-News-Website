@@ -1,16 +1,65 @@
-# React + Vite
+# NewsWave - Basic News Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive news application built with React and Vite that fetches real-time news articles using the NewsAPI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Live News Feed:** Fetches the latest headlines from the US.
+- **Categories:** Filter news by Business, Entertainment, Health, Science, Sports, and Technology.
+- **Responsive Design:** Styled with Bootstrap 5 for a clean and mobile-friendly interface.
+- **Real-time Updates:** Automatically refreshes the news feed when switching categories.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React:** Frontend library for building the user interface.
+- **Vite:** Fast build tool and development server.
+- **Bootstrap 5:** CSS framework for styling and responsiveness.
+- **NewsAPI:** External API for fetching news data.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+- Node.js installed on your machine.
+- An API key from [NewsAPI](https://newsapi.org/).
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd Basic-News-Website
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and add your NewsAPI key:
+   ```env
+   VITE_API_KEY=your_api_key_here
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open in Browser:**
+   Visit `http://localhost:5173` (or the URL shown in your terminal).   
+   
+
+## Project Structure
+
+- `src/components/NavBar.jsx`: Navigation bar with category links.
+- `src/components/NewsBoard.jsx`: Main component that fetches and displays the list of news articles.
+- `src/components/NewsItem.jsx`: Component for rendering individual news cards.
+- `src/App.jsx`: Root component that manages the category state.
+
+## License
+
+This project is open-source and available for educational purposes.
